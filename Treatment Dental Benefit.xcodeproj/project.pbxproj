@@ -13,6 +13,10 @@
 		F6BEAC581F892D940042AF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BEAC561F892D940042AF09 /* Main.storyboard */; };
 		F6BEAC5A1F892D940042AF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BEAC591F892D940042AF09 /* Assets.xcassets */; };
 		F6BEAC5D1F892D940042AF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BEAC5B1F892D940042AF09 /* LaunchScreen.storyboard */; };
+		F6BEAC681F892DD00042AF09 /* ZDCChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BEAC641F892DCF0042AF09 /* ZDCChat.framework */; };
+		F6BEAC691F892DD00042AF09 /* ZDCChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6BEAC651F892DCF0042AF09 /* ZDCChat.bundle */; };
+		F6BEAC6A1F892DD00042AF09 /* ZDCChatStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6BEAC661F892DCF0042AF09 /* ZDCChatStrings.bundle */; };
+		F6BEAC6B1F892DD00042AF09 /* ZDCChatAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BEAC671F892DD00042AF09 /* ZDCChatAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F6BEAC591F892D940042AF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6BEAC5C1F892D940042AF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6BEAC5E1F892D940042AF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BEAC641F892DCF0042AF09 /* ZDCChat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZDCChat.framework; sourceTree = "<group>"; };
+		F6BEAC651F892DCF0042AF09 /* ZDCChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZDCChat.bundle; sourceTree = "<group>"; };
+		F6BEAC661F892DCF0042AF09 /* ZDCChatStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZDCChatStrings.bundle; sourceTree = "<group>"; };
+		F6BEAC671F892DD00042AF09 /* ZDCChatAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZDCChatAPI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BEAC681F892DD00042AF09 /* ZDCChat.framework in Frameworks */,
+				F6BEAC6B1F892DD00042AF09 /* ZDCChatAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,10 @@
 		F6BEAC441F892D940042AF09 = {
 			isa = PBXGroup;
 			children = (
+				F6BEAC651F892DCF0042AF09 /* ZDCChat.bundle */,
+				F6BEAC641F892DCF0042AF09 /* ZDCChat.framework */,
+				F6BEAC671F892DD00042AF09 /* ZDCChatAPI.framework */,
+				F6BEAC661F892DCF0042AF09 /* ZDCChatStrings.bundle */,
 				F6BEAC4F1F892D940042AF09 /* Treatment Dental Benefit */,
 				F6BEAC4E1F892D940042AF09 /* Products */,
 			);
@@ -126,9 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BEAC6A1F892DD00042AF09 /* ZDCChatStrings.bundle in Resources */,
 				F6BEAC5D1F892D940042AF09 /* LaunchScreen.storyboard in Resources */,
 				F6BEAC5A1F892D940042AF09 /* Assets.xcassets in Resources */,
 				F6BEAC581F892D940042AF09 /* Main.storyboard in Resources */,
+				F6BEAC691F892DD00042AF09 /* ZDCChat.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +296,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3CD4WV7HG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Treatment Dental Benefit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TB.Treatment-Dental-Benefit";
@@ -295,6 +315,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3CD4WV7HG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Treatment Dental Benefit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TB.Treatment-Dental-Benefit";

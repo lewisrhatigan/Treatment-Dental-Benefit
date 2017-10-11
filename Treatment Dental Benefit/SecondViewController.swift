@@ -6,18 +6,12 @@
 //  Copyright © 2017 Lewis. All rights reserved.
 //
 
-import UIKit
+import ZDCChat
 
 class SecondViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func pushChat(sender: AnyObject) {
+        ZDCChat.start(in: self.navigationController, withConfig: nil)
     }
 
 
